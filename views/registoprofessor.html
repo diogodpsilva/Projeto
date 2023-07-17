@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registo Professor</title> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <script type="module" src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+  </head>
+  <body class="reg-prof">
+    <div class="wrapper-regprof">
+      <div class="title"><span>Registo Professor</span></div>
+      <form id="registration-form" action="/registoprofessor" method="post">
+        <div class="row-regprof">
+          <i class="fas fa-user"></i>
+          <input type="text" id="username" name="username" placeholder="Nome de utilizador" required>
+        </div>
+        <div class="row-regprof">
+          <i class="fas fa-user"></i>
+          <input type="text" id="email" name="email" placeholder="Email" required>
+        </div>
+        <div class="row-regprof">
+          <i class="fas fa-lock"></i>
+          <input type="password" id="password" name="password" placeholder="Palavra-passe" required>
+        </div>
+        <div class="row button-regprof">
+          <a href="/loginprofessor"> <input type="submit" id="signUp" name="signup_submit" value="Registar"></a>
+        </div>
+      </form>
+    </div>
+    <script src="menusiniciais.js"></script>
+  </body>
+</html>

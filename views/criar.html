@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+  </head>
+  <body class="criar-prof">
+    <div class="wrapper-criarprof">
+      <div class="title"><span>Criar Quiz</span></div>
+      <div class="row-nomequiz">
+        <i class="fas fa-question-circle"></i>
+        <input type="text" id="nomequiz" placeholder="Nome do Quiz" required>
+      </div>
+      <div class="row-criarq">
+        <i class="fas fa-question-circle"></i>
+        <input type="text" id="question" placeholder="Pergunta" required>
+      </div>
+      <div class="row-criarop">
+        <i class="fas fa-check-circle"></i>
+        <input type="text" id="option" placeholder="Resposta" required>
+      </div>
+      <div>
+        <button id="adicionarOp" class="addOp">Adicionar Opção</button>
+      </div>
+      <div>
+        <ol id="optionsParent"></ol>
+      </div>
+      <div>
+        <button id="submeterQuestion" class="subQuestion">Submeter</button>
+      </div>
+    </div>
+    <script type="module" src="criarQuiz.js"></script>
+  </body>
+</html>

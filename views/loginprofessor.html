@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Professor</title> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <script type="module" src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+  </head>
+  <body class="login-prof">
+    <!--<div class="topnav">
+      <a href="/paginainicial" class="nav-link" id="pagini-link" data-file="inicio.html">Início</a>
+      <a href="/login" class="nav-link" id="login-link" data-file="login.html">Login</a>
+      <a href="/registopage" class="nav-link" id="registo-link" data-file="registo.html">Registo</a>
+    </div>-->
+    <div class="container-prof">
+      <div class="wrapper-prof">
+        <div class="title"><span>Login Professor</span></div>
+        <form id="loginprofessor-form" action="/loginprofessor" method="post">
+          <div class="row-prof">
+            <i class="fas fa-user"></i>
+            <input type="text" id="email" name="email" placeholder="Email" required>
+          </div>
+          <div class="row-prof">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+          </div>
+          <div class="row button-prof">
+            <input type="submit" id="signIn" name="login" value="Login">
+          </div>
+          <hr>
+          <div class="naoconta">
+            <a>Ainda não tem conta?</a>
+          </div>
+          <div class="registo">
+            <a href="/registoprof">Registar</a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="menusiniciais.js"></script>
+  </body>
+</html>

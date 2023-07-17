@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Professor</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <script
+      type="module"
+      src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"
+    ></script>
+    <script
+      type="module"
+      src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"
+    ></script>
+    <script
+      type="module"
+      src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"
+    ></script>
+  </head>
+  <body class="bodyprof">
+    <div class="topnavprof">
+      <a
+        href="/menuprofessor/comecar"
+        class="nav-linkprof"
+        id="comecar-link"
+        data-file="comecar.html"
+        >Começar</a
+      >
+      <a
+        href="/menuprofessor/criar"
+        class="nav-linkprof"
+        id="criar-link"
+        data-file="criar.html"
+        >Criar</a
+      >
+      <a href="/todosResultados">Resultados</a>
+      <form action="/logoutprofessor" method="post">
+        <button id="logout-button" type="submit" class="logout">
+          <i class="fas fa-sign-out-alt"></i>
+        </button>
+      </form>
+    </div>
+    <div class="container-prof">
+      <!-- The content will be dynamically updated here -->
+    </div>
+    <script type="module" src="menusprofessor.js"></script>
+    <!--<script type="module" src="logoutprofessor.js"></script>-->
+    <script type="module" src="criarSala.js"></script>
+    <script type="module" src="criarQuiz.js"></script>
+  </body>
+</html>

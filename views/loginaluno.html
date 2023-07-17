@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Aluno</title> 
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    </head>
+    <body class="login-aluno">
+        <div class="container-aluno">
+            <div class="wrapper-aluno">
+                <div class="title"><span>Login Aluno</span></div>
+                <form id="loginaluno-form" action="\loginaluno" method="post">
+                    <div class="row-aluno">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="row-aluno">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="password" name="password" placeholder="Password" required>
+                    </div>
+                    <div class="row button-logaluno">
+                        <input id="login" type="submit" value="Login">
+                    </div>
+                    <hr>
+                    <div class="naoconta">
+                        <a>Ainda não tem conta?</a>
+                    </div>
+                    <div class="registoaluno">
+                        <a href="/registoal">Registar</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="menusiniciais.js"></script>
+    </body>
+</html>

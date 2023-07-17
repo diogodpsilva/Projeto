@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Juntar Sala</title> 
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    </head>
+    <body class="juntarsala">
+        <form class="logoutbtn" action="/logoutaluno" method="post">
+            <button id="logout-button" type="submit" class="logout"><i class="fas fa-sign-out-alt"></i></button>
+        </form>
+        <div class="container-juntarsala">
+            <div class="wrapper-juntarsala">
+                <div class="title"><span>Juntar Sala</span></div>
+                    <div class="row-juntarsala">
+                        <i class="fas fa-lock"></i>
+                        <input type="text" id="codSala" name="codSala" placeholder="Código da Sala" required>
+                    </div>
+                    <div class="row button-juntarsala">
+                        <input id="juntarSala" type="submit" value="Juntar a Sala">
+                    </div>
+            </div>
+        </div>
+        <script src="menusiniciais.js"></script>
+        <script type="module" src="juntarSala.js"></script>
+    </body>
+</html>
